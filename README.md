@@ -19,6 +19,35 @@ root.render(<h1>Hello World</h1>);
 
 <hr>
 
+## Componentes en React
+
+Los componentes son partes de la interfaz y son reutilizables. Necesitamos de un componente inicial para agregar todos los elementos necesarios.
+
+```JS
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//Funciones que retornan una interfaz
+function Greeting() {
+    return <h1>Hola Ivan</h1>
+}
+
+//Existen dos maneras de llamar a la funcion Greeting()
+//Siempre debe tener un elemento que contenga al resto si sacamos el div da un error
+root.render(
+    <div>
+        {Greeting()}
+        <Greeting></Greeting>
+
+        {/* Self closing tags */}
+        <Greeting />
+    </div>
+);
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
