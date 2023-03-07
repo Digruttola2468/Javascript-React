@@ -48,6 +48,59 @@ root.render(
 
 ```
 
+## JSX
+
+**Es la combinacion de Javascript y HTML** donde nos permite que dentro del archivo javascript agregar etiquetas de HTML. Es basicamente lo que veniamos haciendo anteriormente. Donde verificamos que el **codigo en javascript no es 100% puro en su lenguaje al importar React**.
+
+```JS
+const name = "Ivan DI Gruttola";
+  const segundoNombre = true;
+
+  /* 
+    if(segundoNombre)
+        return <h1>Hola { name } , posee segundo nombre</h1>
+    else 
+        return <h1>Hola { name } , NO posee segundo nombre</h1>
+    */
+
+  //Ternary Operator
+  return (
+    <h1>
+      {" "}
+      {segundoNombre
+        ? "Tengo Segundo Nombre 😀"
+        : "No tengo Segundo nombre"}{" "}
+    </h1>
+  );
+```
+
+```JS
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function Greeting() {
+  function add(x, y) {
+    return x + y;
+  }
+  return <h1>{add(30, 13)}</h1>;
+}
+
+root.render(Greeting());
+```
+
+En JSX nos da la posibilidad de usar Fragment <></> para poder agregar un contenedor vacio
+
+```JS
+root.render(
+<>
+    Greeting()
+    Greeting()
+    Greeting()
+</>);
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
