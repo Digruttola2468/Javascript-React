@@ -1,6 +1,23 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Download [Node JS](https://nodejs.org/en/)
+2. Abrir Consola (Window)
+3. Nos movemos a la carpeta desktop `cd desktop`
+4. Verificamos si node JS esta instalado `node --version`
+5. Con el siguiente comando `npx create-react-app nombre-proyecto` creamos un proyecto React
+
+## Hello World React
+
+```JS
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+//root es el elemento raiz de React
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello World</h1>);
+```
+
+<hr>
 
 ## Available Scripts
 
