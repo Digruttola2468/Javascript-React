@@ -1,18 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+//No es necesario agregar las extenciones .js
+import { Greeting, UserCard } from './Greating';
+
+import Algo,{ Agregar } from './Product';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  function add(x, y) {
-    return x + y;
-  }
-  return <h1>{add(30, 13)}</h1>;
-}
-
+//PascalCase
 root.render(
 <>
     {Greeting()}
-    {Greeting()}
-    {Greeting()}
+    {UserCard()}
+    {Algo()}
 </>);

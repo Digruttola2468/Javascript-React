@@ -101,6 +101,37 @@ root.render(
 </>);
 ```
 
+## ECmaScript - Javascript Modules
+
+Existen diferentes maneras de importar y exportar modulos
+
+En el archivo `Product.js` vemos el siguiente codigo 
+
+```JS
+function Product() {
+    return <div>
+        <h1>Producto de la clase Product</h1>
+    </div>
+}
+
+export function Agregar () {
+
+}
+
+//Exporta por defecto la siguente funcion
+export default Product
+```
+
+Donde por Defecto al momento de importar la clase en el `index.js` vemos que se hace de la siguiente manera
+
+```JS
+//Podemos agregarle otro nombre ya que es como una variable
+import Algo from './Product';
+
+//Tenemos tmb esta forma de llamarar a la funcion Agregar() que esta exportando de Product.js
+//import Algo,{ Agregar } from './Product';
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
