@@ -171,6 +171,75 @@ Instalamos la libreria , abrimos Consola del sistema y nos movemos a la carpeta 
 
 Esta libreria nos ayudara que al momento de enviar paramentros sea solamente de un tipo de dato.
 
+```JS
+import PropTypes from 'prop-types'; // ES6
+
+export function Button( {text, name="Usuario"} ) {
+    return <button>
+        {text} - {name}
+    </button>
+}
+
+Button.prototype = {
+    text: PropTypes.string.isRequired
+}
+```
+
+## Estilos
+
+Nosotros podemos colocar estilos en un archivo CSS o en el mismo JSX
+
+### Estilos JSX
+
+```JS
+export function TaskCard() {
+
+  const cardStyles = {
+    backgroundColor: "#3de",
+    color: "#fff",
+    padding: "20px",
+  };
+
+  return (
+    <div>
+      <h1 style={{ backgroundColor: "#000", color: "#fff", padding: "20px" }}>
+        Mi Primera Tarea
+      </h1>
+      <h2 style={cardStyles}>Mi Segunda Tarea</h2>
+
+      <p>Tarea Realizada</p>
+    </div>
+  );
+}
+```
+
+### Estilos CSS
+
+```JS
+//Import File CSS
+import "./task.css";
+
+export function TaskCard( {ready} ) {
+
+  const cardStyles = {
+    backgroundColor: "#3de",
+    color: "#fff",
+    padding: "20px",
+  };
+
+  return (
+    <div className="card">
+      <h1 style={{ backgroundColor: "#000", color: "#fff", padding: "20px" }}>
+        Mi Primera Tarea
+      </h1>
+      <h2 style={cardStyles}>Mi Segunda Tarea</h2>
+
+      <p className={ready ? "green" : "red"}>{ready ? "Tarea Terminada" : "Tarea Pendiente"}</p>
+    </div>
+  );
+}
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

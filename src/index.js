@@ -5,14 +5,13 @@ import ReactDOM from "react-dom/client";
 import { Greeting, UserCard } from "./Greating";
 import { Button } from './Button';
 import Algo, { Agregar } from "./Product";
+import {TaskCard} from './Task';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //PascalCase
 root.render(
   <>
-    <Button text="Click me"/>
-    <Button text="Pay"/>
-    <Button text="Go to"/>
+    <TaskCard ready={false}/>
   </>
 );
