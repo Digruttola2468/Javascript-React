@@ -163,6 +163,14 @@ export function UserCard(props) {
 }
 ```
 
+## PropTypes y defaultProps
+
+Instalamos la libreria , abrimos Consola del sistema y nos movemos a la carpeta del proyecto y colocar el siguiente comando
+
+`npm install --save prop-types`
+
+Esta libreria nos ayudara que al momento de enviar paramentros sea solamente de un tipo de dato.
+
 ## Available Scripts
 
 In the project directory, you can run:
