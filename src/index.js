@@ -6,6 +6,7 @@ import { Greeting, UserCard } from "./Greating";
 import { Button } from './Button';
 import Algo, { Agregar } from "./Product";
 import {TaskCard} from './Task';
+import {Saludar} from './Saludar.js';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -13,5 +14,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <TaskCard ready={false}/>
+    <Saludar/>
   </>
 );

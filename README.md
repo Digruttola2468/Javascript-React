@@ -240,6 +240,20 @@ export function TaskCard( {ready} ) {
 }
 ```
 
+## Tipos de Componentes
+
+No es muy practicada y es algo muy dificil de mantener en una aplicacion grande. Igualmente React lo toma como algo normal, no afecta en nada, pero si tene en cuenta que existen distintas maneras de crear un componente mas optimizado y legible
+
+```JS
+import {Component} from 'react'
+
+export class Saludar extends Component{
+    render() {
+        return <h1>Hola Mundo</h1>
+    }
+}
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
