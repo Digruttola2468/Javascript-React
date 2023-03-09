@@ -132,6 +132,37 @@ import Algo from './Product';
 //import Algo,{ Agregar } from './Product';
 ```
 
+## React Props
+
+Nos ayuda a cambiar datos internamente de un componente
+
+En JSX podemos enviar a la funcion UserCard un objeto con los atributos que posee el elemento HTML
+
+```JSX
+  <UserCard
+    name="Ivan DI Gruttola"
+    amount={3000}
+    married={false}
+    points={[90, 33, 1.3]}
+    address={{ street: "Bustamante 234", city: "Rosario" }}
+  />
+```
+
+```JS
+export function UserCard(props) {
+  console.log(props);
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <p> ${props.amount} </p>
+      <p> Estado Civil: {props.married ? "Casado" : "Soltero"} </p>
+      <p> Ubicacion: {props.address.street} </p>
+      <p> Ciudad: {props.address.city} </p>
+    </div>
+  );
+}
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
