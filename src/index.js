@@ -13,7 +13,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //PascalCase
 root.render(
   <>
-    <TaskCard ready={false}/>
-    <Saludar/>
+    <Button text="Click Me"/>
   </>
 );
