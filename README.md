@@ -274,6 +274,8 @@ Donde nosotros aprenderemos a usar useState , useEffect y useContext
 
 ### useEffect
 
+![](./Captura%20de%20pantalla%202023-03-10%20143708.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
