@@ -254,6 +254,12 @@ export class Saludar extends Component{
 }
 ```
 
+## Third Party Modules, React-icons
+
+Nosotros en React podemos importar modulos ya realizados por otros programadores para crear por ejemplo una notificacion. En nuestro caso usaremos por parte de [React-icons](https://react-icons.github.io/react-icons/)
+
+importamos abriendo la consola y colocando el siguiente codigo `npm install react-icons`
+
 ## Available Scripts
 
 In the project directory, you can run:

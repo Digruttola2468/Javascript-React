@@ -1,3 +1,4 @@
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Posts = () => {
   return (
@@ -7,6 +8,7 @@ export const Posts = () => {
             .then(data => console.log(data))
             .catch(error => console.error(error));
     } }>
+        <FaWhatsapp/>
         Traer Datos
     </button>
   );
