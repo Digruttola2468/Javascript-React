@@ -272,7 +272,7 @@ Donde nosotros aprenderemos a usar useState , useEffect y useContext
 
 ### useState
 
-
+### useEffect
 
 ## Available Scripts
 
